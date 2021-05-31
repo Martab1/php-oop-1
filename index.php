@@ -35,6 +35,11 @@ class Movie {
       public function getExcerpt(){
           return substr($this->plot,0,100);
       }
+
+      // get Genre 
+      public function getGenre(){
+          return $this->genre;
+      }
  }
 
 
@@ -43,10 +48,12 @@ class Movie {
 //  $movie1->title = 'The Great Gatsby';
 //  $movie1->plot = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, obcaecati? A odit alias praesentium ducimus ut maiores vitae. Accusamus magni nobis saepe veritatis vel aperiam maiores molestiae a quo voluptate.';
 //  $movie1->genre = 'Drama';
- var_dump($movie1);
+//  var_dump($movie1);
 
  // stampa
- echo '<h2> Title: '. $movie1->title . '</h2> ' . ' <p> Incipit plot: '. $movie1->getExcerpt(). '...</p>'. '<div> Genre: '. $movie1->genre  . '</div>' ;
+ echo '<h2> Title: '. $movie1->title . '</h2> ' . 
+      ' <p> Incipit plot: '. $movie1->getExcerpt(). '...</p>'. 
+       '<div> Genre: '. $movie1->getGenre()  . '</div><br><br>' ;
 
 
 
@@ -55,10 +62,12 @@ class Movie {
 //  $movie2->title = 'Notting Hill';
 //  $movie2->plot = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit repellat qui odio voluptate, voluptates dolore nostrum minus iusto. Adipisci doloribus obcaecati maxime temporibus minima culpa repellat consequatur blanditiis modi?';
 //  $movie2->genre = 'Romantic comedy';
-var_dump($movie2);
+// var_dump($movie2);
 
  // stampa
- echo '<h2> Title: '. $movie2->title . '</h2> ' . ' <p> Incipit plot: '. $movie2->getExcerpt().  '...</p>'. '<div> Genre: '. $movie2->genre  . '</div>' ;
+ echo '<h2> Title: '. $movie2->title . '</h2> ' . 
+      ' <p> Incipit plot: '. $movie2->getExcerpt().  '...</p>'. 
+      '<div> Genre: '. $movie2->getGenre()  . '</div>' ;
 
 
  
